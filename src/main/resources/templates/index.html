@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <meta charset="UTF-8">
+    <title>Nashorn Client</title>
+</head>
+<body>
+  <main class="main">
+      <section class="fileId-section">
+          <form class="fileId-form">
+              <input  class="fileId-input" name="fileId" type="text" placeholder="Insert FileId"/>
+              <button class="submit-btn delete" type="submit">Delete</button>
+          </form>
+      </section>
+      <section class="files-section">
+          <form class="file-form">
+              <input  class='file-input' type="file" multiple/>
+              <button class="submit-btn" type="submit">Submit</button>
+          </form>
+          <div class="selected-files"></div>
+      </section>
+      <section class="response-section">
+          <button class="response-btn">Get Response</button>
+      </section>
+  </main>
+  <script async src="/js/script.js"></script>
+</body>
+</html>

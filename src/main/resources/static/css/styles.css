@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+textarea {
+    resize: none;
+    outline: none;
+}
+body {
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+:after, :before {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 20vh;
+    justify-content: center;
+}
+
+.fileId-section {
+    position: relative;
+    flex: 0 0 auto;
+    padding: 2.7em 0;
+    margin-left: 7%;
+}
+
+.files-section {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 2.7em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-form, .fileId-form {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.file-input, .fileId-input{
+    flex: 1 1 auto;
+    max-width: 55%;
+    font-size: 1.05em;
+    padding-left: 1.2em;
+    font-weight: 500;
+    text-align: left;
+    display: inline-block;
+    color: rgb(45, 109, 163);
+}
+
+.selected-files, .response-section p {
+    margin-top: 2em;
+    flex: 1 1 auto;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    overflow: hidden;
+    color: rgb(45, 109, 163);
+}
+
+.submit-btn, .response-btn {
+    flex: 0 0 auto;
+    cursor: pointer;
+    font-size: 1.05em;;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+    height: 2em;
+    color: rgb(45, 109, 163);
+    border-radius: .1em;
+    outline: 0;
+    border-width: 1px;
+    transition: background 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s;
+    padding: 0 2em;
+}
+
+.response-section {
+    flex: 0 0 auto;
+    padding: 2.7em 0;
+    margin-right: 10%;
+    margin-bottom: 5em;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.response-section p {
+    max-width: 600px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: center;
+}
+
+.delete {
+    margin-left: 5%;
+}
